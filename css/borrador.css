@@ -1,0 +1,21 @@
+body {
+    margin: 20px;
+}
+
+.content-wrapper {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.titulo {
+    font-size: var(--tamano-titulo);
+    margin: 0;
+    font-weight: bold; /* Opcional: para dar más énfasis */
+}
+
+.texto-ejemplo {
+    font-size: var(--tamano-texto);
+    margin: 0;
+    line-height: 1.5;
+    color: #333; /* Color oscuro para mejor contraste */
+}
