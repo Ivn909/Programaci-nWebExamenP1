@@ -1,21 +1,145 @@
+/* Fuente Poppins Medium */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Estilo general del cuerpo */
 body {
-    margin: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Mejora la legibilidad */
+    background-color: #004AAD; /* Fondo de todo el sitio con el color #004AAD */
+    color: white; /* Cambia el color del texto a blanco para contraste */
+    border-top: 10px solid #ffbd59; /* Línea amarilla en la parte superior */
 }
 
-.content-wrapper {
+/* Imagen del logotipo en la parte superior */
+.container img {
+    width: 50px;
+}
+
+/* Ajusta las dimensiones y agrega padding */
+#leftdiv, #rightdiv {
+    height: auto; /* Ya no se usa vh-100 para hacer que ocupe toda la altura */
     padding: 20px;
-    border-radius: 10px;
+    box-sizing: border-box; /* Para asegurarse de que el padding no rompa el diseño */
 }
 
+
+/* Títulos */
 .titulo {
-    font-size: var(--tamano-titulo);
+    font-size: 30px;
     margin: 0;
-    font-weight: bold; /* Opcional: para dar más énfasis */
+    font-weight: bold;
 }
 
-.texto-ejemplo {
-    font-size: var(--tamano-texto);
-    margin: 0;
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    color: #ffbd59;
+}
+
+/* Estilo para los textos dentro del div */
+.texto-principal {
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
     line-height: 1.5;
-    color: #333; /* Color oscuro para mejor contraste */
+    color: #fff; /* Color blanco para texto en secciones con fondo oscuro */
+    text-align: justify;
+    max-width: 80%;
+    text-align: justify;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+/* Personalización de los campos de texto */
+.custom-input {
+    background-color: #ffffff;
+    width: 60%; /* Ajusta el ancho a 30% del contenedor */
+    height: 40px; /* Ajusta la altura a 20px */
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+    box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+    margin-bottom: 15px; /* Espaciado entre los campos */
+}
+
+/* Botón de Reserva */
+.btn-reservar {
+    background-color: #28a745; /* Verde */
+    color: white;
+    font-size: 18px;
+    font-weight: 500; /* Poppins Medium */
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-left: 235px; /* Para alinear a la derecha */
+    margin-top: 20px;
+}
+
+.btn-reservar:hover {
+    background-color: #218838; /* Verde más oscuro */
+}
+
+/* Botón Temario Taller */
+.btn-temario {
+    background-color: #cb6ce6; /* Color del fondo */
+    color: white;
+    font-size: 18px;
+    font-weight: 500; /* Poppins Medium */
+    border-radius: 0px;
+    padding: 10px 20px;
+    margin-top: 20px; /* Espaciado vertical entre el video y el botón */
+}
+
+/* Hacer que las columnas se ajusten a pantallas pequeñas */
+@media (max-width: 768px) {
+    #leftdiv, #rightdiv {
+        height: auto; /* Ajuste para pantallas pequeñas */
+    }
+}
+
+/* Hacer que los inputs y el botón estén alineados correctamente */
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+
+#rightdiv iframe {
+    border-radius: 8px; /* Borde redondeado */
+    border: 5px solid #febd59; /* Borde de 5px de color #febd59 */
+    width: 80%; /* Ajusta el tamaño del video (80% del contenedor) */
+    height: 200px; /* Establece la altura del video */
+}
+
+.linea {
+    width: 88%; /* Ocupa el 80% de la pantalla en horizontal */
+    height: 2px; /* Grosor de 2px */
+    background-color: #ffbd59; /* Color de la línea */
+    margin: 20px auto; /* Centra la línea y le da un espacio vertical */
+}
+
+/* Estilo para el Footer */
+.footer {
+    color: white;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+.line-footer {
+    border: none;
+    border-top: 2px solid #ffbd59;
+}
+
+/* Estilo para los íconos de las redes sociales */
+.social-icons a {
+    margin: 0 15px;
+}
+
+.social-icons svg {
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover svg {
+    transform: scale(1.1);
 }
